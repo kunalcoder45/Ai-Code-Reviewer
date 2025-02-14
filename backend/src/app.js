@@ -1,8 +1,10 @@
 import express from "express";
 import aiRoutes from "./routes/ai.js";
+import cors from "cors";
 
 const app = express();
-app.use(express.json()); // ✅ Needed to parse JSON body
+app.use(express.json());
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Hello, Express!");
@@ -10,9 +12,5 @@ app.get("/", (req, res) => {
 
 app.use("/ai", aiRoutes);
 
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
 
 export default app;

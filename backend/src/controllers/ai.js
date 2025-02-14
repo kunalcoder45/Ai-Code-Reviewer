@@ -2,7 +2,7 @@ import aiService from "../services/ai.js";
 
 const getReview = async (req, res) => {
   try {
-    const { code } = req.body; // ✅ Use req.body instead of req.query
+    const { code } = req.body;
 
     if (!code) {
       return res.status(400).json({ error: "Code input is required" });
