@@ -1,0 +1,70 @@
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-color: #434344;
+    display: flex;
+    gap: 1rem;
+}
+
+.container .left , .container .right {
+    height: 100%;
+    width: 50%;
+    border-radius: 0.7rem;
+}
+
+.container .left {
+    background-color: #141313;
+    overflow: auto;
+    position: relative;
+}
+
+
+.editor {
+    color: #fff;
+    height: auto;
+    border: #fff solid 1px;
+    border-radius: 0.7rem;
+}
+
+
+.container .left button {
+    position: sticky;
+    bottom: 1rem;
+    top: 38rem;
+    right: 1rem;
+    margin-left: auto;
+    background-color: rgb(127, 193, 255);
+    color: #000;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 25px;
+    display: block;
+}
+
+.container .left button:hover {
+    transition: all 0.3 ease-in-out;
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+.container .left pre {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 0.7rem;
+}
+
+
+.container .right {
+    background-color: #e7f1c2;
+    overflow: scroll;
+    color: #000;
+}
+
+.prose {
+    padding: 1rem;
+}
