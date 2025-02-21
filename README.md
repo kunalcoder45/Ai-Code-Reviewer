@@ -23,7 +23,7 @@ AI Code Reviewer is an intelligent code review tool powered by **Google Gemini A
 
 ### 1️⃣ **Clone the Repository**
 ```sh
-git clone https://github.com/your-username/ai-code-reviewer.git
+https://github.com/kunalcoder45/Ai-Code-Reviewer.git
 cd ai-code-reviewer
 ```
 
